@@ -4,6 +4,7 @@ body {
   background-image: url('../images/pattern-curve.svg');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100%;
 }
 
 .hide {
@@ -11,37 +12,77 @@ body {
 }
 
 /* font-family: 'Inter', sans-serif; 300, 500, 700 */
+.slider-container {
+  position: relative;
+}
 
-.slide-list {
+.slider-list {
+  width: 90%;
+  margin: 2rem auto;
+  background-image: url('../images/pattern-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.slider-list > li {
+  width: 77%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.testimonial-slider {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .75rem 1rem;
+  border-radius: 500px;
+  z-index: 2;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.slide-arrow {
+  width: auto;
+  height: 18px;
+}
+
+.testimonial {
+  text-align: center;
   width: 90%;
   margin: 0 auto;
-  background-image: url('../images/pattern-bg.svg');
-  background-position: top center;
-  background-size: cover;
 }
 
 .testimonial-pfp {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  box-shadow: -2rem 4.5rem 3rem -3rem hsl(240deg 18% 77%);
+  border-radius: 5px;
 }
 
-.testimonial-slide-container {
-  position: relative;
+.testimonial-quote {
+  margin: 1rem auto;
+  padding-top: 2rem;
+  background-image: url('../images/pattern-quotes.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-size: 20px;
 }
 
-.testimonial-slider {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.5rem 1rem;
-  border-radius: 500px;
-  z-index: 2;
-  background-color: hsl(0, 0%, 100%);
+.testimonial-name {
+  font-weight: 700;
 }
 
-.slide-arrow {
-  width: auto;
-  height: 18px;
+.testimonial-job-title {
+  color: hsl(240, 18%, 77%);
+  font-weight: 500;
 }
